@@ -7,7 +7,7 @@ function focusNext(currentInput) {
     }
 }
 
-function handleBackspace(currentInput) {
+function handleBackspace(currentInput, event) {
     if (currentInput.value === '' && event.key === 'Backspace') {
         const previousInput = currentInput.previousElementSibling;
         if (previousInput) {
